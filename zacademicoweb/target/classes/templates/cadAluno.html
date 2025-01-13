@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Aluno</title>
+</head>
+<body>
+    <form action="#" th:action="@{/aluno/inserir}" method="post" th:object="${aluno}" id="cadAluno" name="cadAluno">
+        <label for="">Nome: </label><input type="text" name="nome" id="nome" th:field="*{nome}"><br>
+        <label for="">CPF: </label><input type="text" name="cpf" id="cpf" th:field="*{cpf}"><br>
+        <label for="">Idade: </label><input type="text" name="idade" id="IDADE" th:field="*{idade}"><br>
+        <label for="">Matrícula: </label><input type="text" name="matricula" id="matricula" th:field="*{matricula}"><br>
+        <label for="">Senha: </label><input type="text" name="senha" id="senha" th:field="*{senha}"><br>
+        <label for="">Email Pessoal: </label><input type="text" name="email_pessoal" id="email_pessoal" th:field="*{email_pessoal}"><br>
+        
+        <button>Cadastrar</button>
+    </form>
+</body>
+</html>
